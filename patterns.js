@@ -1,5 +1,8 @@
-function foo(){
- console.log("foo");
-};
+//wrapped function inside of a functional enclosure
 
-foo();
+(function(){
+    function foo(){
+        console.log("function within a enclosure");
+    }
+    foo();
+}());//by wrapping function in parenthesis treats like a free  expression
